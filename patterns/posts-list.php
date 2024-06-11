@@ -9,15 +9,11 @@
 ?>
 
 
+<!-- wp:post-template -->
+<!-- wp:separator {"backgroundColor":"contrast-3","className":"alignwide is-style-wide"} -->
+<hr class="wp-block-separator has-text-color has-contrast-3-color has-alpha-channel-opacity has-contrast-3-background-color has-background alignwide is-style-wide" />
+<!-- /wp:separator -->
+
 
 <!-- wp:post-title {"isLink":true,"style":{"typography":{"lineHeight":"1.1","fontSize":"1.5rem"}}} /-->
-
-
-<!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"space-between"}} -->
-<!-- wp:query-pagination-previous /-->
-
-<!-- wp:query-pagination-numbers /-->
-
-<!-- wp:query-pagination-next /-->
-<!-- /wp:query-pagination -->
-<!-- wp:query-no-results -->
+<!-- wp:template-part {"slug":"post-meta"} /-->
