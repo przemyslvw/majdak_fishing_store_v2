@@ -7,6 +7,24 @@
  * Block Types: core/query
  */
 ?>
+<!-- Wyświetlanie postów -->
+<div class="posts-list">
+    <div class="container">
+        <?php
+        if (have_posts()) :
+            while (have_posts()) : the_post(); ?>
+                <div class="post">
+                    <!-- Tytuł posta jako link -->
+                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <!-- Meta dane posta -->
+                    <?php get_template_part('post-meta'); ?>
+                </div>
+            <?php endwhile;
+        else : ?>
+            <p><?php _e('Nie znaleziono postów.', 'textdomain'); ?></p>
+        <?php endif; ?>
+    </div>
+</div>
 <?php
 // Upewnij się, że WooCommerce jest aktywny
 if (class_exists('WooCommerce')) : ?>

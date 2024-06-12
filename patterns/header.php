@@ -7,7 +7,8 @@
  * Block Types: core/template-part/header
  */
 ?>
-
-<div>
-    header
+<div class="container">
+    <div>
+        header
+    </div>
 </div>

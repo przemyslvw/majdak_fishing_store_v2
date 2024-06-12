@@ -7,7 +7,8 @@
  * Block Types: core/template-part/footer
  */
 ?>
-
-<div>
-    footer
+<div class="container">
+    <div>
+        footer
+    </div>
 </div>
